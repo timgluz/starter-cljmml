@@ -1,6 +1,6 @@
 (defproject starter-mml "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Starter project for clj-mml to make creating new project even faster."
+  :url "https://github.com/timgluz/starter-cljmml"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies []
@@ -11,7 +11,6 @@
             [lein-git-deps "0.0.1-SNAPSHOT"]]
   :git-dependencies [["https://github.com/timgluz/clj-mml.git" ]]
   :source-paths ["src/" ".lein-git-deps/clj-mml/src/"]
-  :resource-paths ["lib/" ".lein-git-deps/clj-mml/lib/"]
   :clr {:cmd-templates  {:clj-exe   ["mono" [CLJCLR14_40 %1]]
                          :clj-dep   ["mono" ["target/clr/clj/Debug 4.0" %1]]
                          :clj-url   "https://github.com/downloads/clojure/clojure-clr/clojure-clr-1.4.1-Debug-4.0.zip"
@@ -28,7 +27,7 @@
         :deps-cmds      [; [:wget  :clj-zip :clj-url] ; edit to use :curl instead of :wget
                          ; [:unzip "../clj" :clj-zip]
                          ; copy mymedialite libs to project libs
-                         ["cp" "-r" ".lein-git-deps/clj-mml/lib" "."]
+                         ;["cp" "-r" ".lein-git-deps/clj-mml/lib" "."]
                          ]
         :main-cmd      [:clj-exe "Clojure.Main.exe"]
         :compile-cmd   [:clj-exe "Clojure.Compile.exe"]

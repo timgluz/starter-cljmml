@@ -1,10 +1,30 @@
-# starter-mml
+# starter-cljmml
 
-A ClojureCLR library designed to ... well, that part is up to you.
+Starter-project for [CLJ-MML](https://github.com/timgluz/clj-mml). 
+
 
 ## Usage
 
-FIXME
+1. clone this project
+
+```
+git clone https://github.com/timgluz/starter-cljmml.git
+```
+
+2. fetch dependencies
+
+```
+lein deps
+lein git-deps
+```
+
+3. run example
+
+```
+lein clr run
+```
+
+
 
 ## License
 
